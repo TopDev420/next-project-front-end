@@ -1,0 +1,13 @@
+@import '~react-big-calendar/lib/css/react-big-calendar.css';
+.rbc-row {
+  @apply py-0.5;
+}
+.rbc-container {
+  height: 640px;
+  @media (min-width: 1440px) {
+    height: 720px;
+  }
+  @media (max-width: 720px) {
+    height: 576px;
+  }
+}

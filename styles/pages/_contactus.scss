@@ -1,0 +1,21 @@
+.contact-container {
+  @apply z-10;
+  margin-top: -200px;
+
+  .contact-container__form-control {
+    @apply flex flex-col mb-5 px-3;
+    .contact-container__form-elem {
+      @apply w-full px-3 py-2 border border-gray-300;
+    }
+
+    .text-input {
+      min-height: 100px;
+    }
+    .btn-contact-submit {
+      @apply absolute rounded-full p-4 w-16 h-16 bg-blue-900;
+      bottom: -20px;
+      right: -20px;
+      box-shadow: 0 0 10px rgb(31 71 103 / 70%);
+    }
+  }
+}

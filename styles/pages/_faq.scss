@@ -1,0 +1,11 @@
+.faq-banner {
+  height: 30vh;
+  position: relative;
+}
+.accordion {
+  .active {
+    .accordion__button {
+      @apply bg-blue-900 text-white;
+    }
+  }
+}

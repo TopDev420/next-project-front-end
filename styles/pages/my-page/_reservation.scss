@@ -1,0 +1,41 @@
+.reservation {
+  @apply flex flex-col max-w-screen-lg mx-auto p-4 md:p-0;
+  &__content {
+    @apply shadow-lg bg-white border;
+  }
+  &__skeleton {
+    @apply p-4 overflow-x-auto;
+  }
+  &__data {
+    //@apply min-w-screen-md;
+  }
+  &__footer {
+    @apply mt-4 text-center;
+  }
+  &__group {
+    @apply flex flex-row;
+    justify-content: flex-end;
+    padding: 5px 0;
+  }
+  &__item {
+    @apply flex flex-row py-4 border-b;
+  }
+  &__itemImage {
+    @apply relative w-32 h-24 mr-6;
+  }
+  &__itemUser {
+    @apply flex flex-col flex-1 mr-2;
+  }
+  &__itemDetail {
+    @apply flex flex-col text-sm mr-4;
+  }
+  &__itemAction {
+    @apply flex flex-col flex-initial w-36 text-sm;
+  }
+
+  @media (max-width: 650px) {
+    &__item {
+      @apply flex flex-col;
+    }
+  }
+}

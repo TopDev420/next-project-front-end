@@ -1,0 +1,23 @@
+.lyhPanel {
+  @apply border flex flex-col items-center p-6 relative overflow-hidden;
+  flex: 1;
+
+  &__title {
+    @apply text-center my-4 text-xl;
+
+    &:after {
+      content: '';
+      background: rgba(35, 83, 122, 0.5);
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      right: -35px;
+      top: -35px;
+      border-radius: 50%;
+      box-shadow: -5px 5px 0 0 rgb(35 83 122 / 20%);
+    }
+  }
+  &__content {
+    @apply text-gray-600 text-lg;
+  }
+}

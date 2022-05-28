@@ -1,0 +1,60 @@
+.company-pricing {
+  .media-container {
+    min-height: 300px;
+
+    .bg-source {
+      .bg-img {
+        background-position: 50%;
+        opacity: 0.8;
+        background-image: url('https://vacation.rentals/static/media/help-banner.37c61d7a.jpg');
+      }
+    }
+
+    .pos-absolute-0 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .media-content {
+      .media-text {
+        text-shadow: 2px 3px 5px #000;
+        font-size: 35px;
+      }
+    }
+  }
+
+  .table-container {
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      min-width: 700px;
+
+      thead {
+        th {
+          span.price {
+            color: #ff5406;
+            font-size: 30px;
+          }
+
+          &.plan {
+            font-size: 18px;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          text-align: center;
+          &.tickblue {
+            color: #0078c1;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '~react-phone-input-2/lib/style';
+
+.react-tel-input {
+  height: 100%;
+
+  .form-control {
+    width: 100%!important;
+    height: 100%;
+  }
+}

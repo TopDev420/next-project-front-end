@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoogleAddressParser result should work 1`] = `
+Object {
+  "city": "Branson",
+  "country": "United States",
+  "country_code": "US",
+  "postal_code": "65616",
+  "state": "Missouri",
+  "street_name": "West Pacific Street",
+  "street_number": "301",
+}
+`;

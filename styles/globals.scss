@@ -1,0 +1,23 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@import 'typography';
+
+@import 'components/main';
+@import 'pages/main';
+
+@import 'unreset';
+
+.content {
+  @apply p-5 md:p-10;
+  min-height: 240px;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+main {
+  padding-top: 90px;
+}

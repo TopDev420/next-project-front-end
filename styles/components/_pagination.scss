@@ -1,0 +1,14 @@
+.pagination {
+  @apply flex flex-row items-center w-full justify-center;
+  &--navItem {
+    button {
+      @apply p-2;
+      &:hover {
+        @apply bg-gray-50;
+      }
+    }
+    input {
+      @apply border;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.next
+.vscode
+assets
+node_modules
+public
+static
+tests/coverage

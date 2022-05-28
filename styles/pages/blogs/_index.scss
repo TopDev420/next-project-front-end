@@ -1,0 +1,59 @@
+.blogsPage {
+  @apply bg-blue-50 p-6;
+
+  &__wrapper {
+    @apply max-w-screen-lg mx-auto flex flex-col;
+  }
+
+  &__title {
+    @apply my-8 text-center;
+  }
+
+  .searchBox {
+    @apply relative border shadow-lg mb-8;
+    &__input {
+      @apply w-full py-2 pl-3 pr-4;
+    }
+    &__icon {
+      @apply absolute right-2.5 top-2.5;
+    }
+  }
+
+  .searchResult {
+    .blogItem {
+      @apply flex flex-col md:flex-row bg-white p-6 shadow-lg mb-6;
+
+      &__thumbnail {
+        @apply w-full md:w-1/4;
+        aspect-ratio: 4/3;
+      }
+      &__content {
+        @apply flex flex-1 flex-col mt-6 md:ml-6 md:mt-0;
+      }
+
+      &__title {
+        @apply text-xl hover:underline;
+      }
+
+      &__tags {
+        @apply flex flex-row flex-wrap  mt-4;
+      }
+
+      &__tag {
+        @apply mr-2 bg-indigo-600 text-white px-3 py-1 text-sm;
+      }
+
+      &__date {
+        @apply mt-4 text-gray-400 text-sm;
+      }
+
+      &__summary {
+        @apply mt-4 text-sm;
+      }
+    }
+
+    .noResult {
+      @apply text-center text-gray-400 text-lg;
+    }
+  }
+}

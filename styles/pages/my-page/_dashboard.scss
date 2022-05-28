@@ -1,0 +1,15 @@
+.dashboardNav {
+  @apply bg-gray-500 text-white;
+  ul {
+    @apply flex flex-row max-w-screen-xl mx-auto overflow-x-auto;
+  }
+  &__item {
+    @apply text-gray-200 cursor-pointer whitespace-nowrap hover:text-white hover:border-white px-6 py-3;
+    &--active {
+      @apply border-b-4 border-gray-100;
+    }
+  }
+}
+.dashboardContent {
+  @apply max-w-screen-xl my-6 mx-auto;
+}

@@ -1,0 +1,69 @@
+.propertyPage {
+  .rdrCalendarWrapper {
+    @apply border;
+  }
+  .rdrMonthAndYearWrapper {
+    @apply pt-0 bg-yellow-200;
+  }
+  .rdrMonth {
+    width: unset;
+  }
+  .rdrDayDisabled {
+    @apply bg-gray-600;
+  }
+}
+.reservationConfirmModal {
+  @screen md {
+    max-width: 56rem !important;
+  }
+
+  .checkOut {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-x-4;
+    &__overlay {
+      @apply hidden lg:block absolute inset-0;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  }
+  .orderDetail {
+    @apply p-6 flex flex-col;
+    &--row {
+      @apply flex flex-col lg:flex-row;
+    }
+    &--group {
+      @apply flex flex-col mb-3 lg:mr-2;
+      flex: 1;
+    }
+    &--label {
+      @apply uppercase mb-2;
+    }
+    &--input {
+      @apply text-sm rounded-2xl border p-2;
+    }
+  }
+  .userInfo {
+    @apply p-6 pl-2;
+    &__row {
+      @apply flex flex-row;
+    }
+    &__group {
+      @apply flex flex-col mb-3;
+      flex: 1;
+      padding: 3px;
+    }
+    &__label {
+      @apply mb-2;
+    }
+    &__input {
+      @apply border p-2 text-sm outline-none;
+    }
+
+    @media (max-width: 400px) {
+      &__row {
+        @apply flex flex-col;
+      }
+      &__group {
+        @apply mr-2;
+      }
+    }
+  }
+}

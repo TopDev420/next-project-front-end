@@ -1,0 +1,40 @@
+.about-staff {
+  &::after {
+    content: '';
+    background: #23537a;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 0 0 rgb(35 83 122 / 20%);
+  }
+
+  &::before {
+    content: '';
+    background: #818384;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: -35px;
+    bottom: -35px;
+    border-radius: 50%;
+    box-shadow: 5px -5px 0 0 rgb(129 130 131 / 10%);
+  }
+
+  img {
+    height: 215px !important;
+    width: 215px !important;
+    border-radius: 50% !important;
+    margin-top: 12px !important;
+    box-shadow: 0 0 33px 0 rgb(25 83 196 / 30%);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  h2 {
+    color: #23537a !important;
+  }
+}

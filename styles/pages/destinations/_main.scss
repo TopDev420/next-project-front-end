@@ -1,0 +1,287 @@
+.destination-page {
+  .media-container {
+    min-height: 400px;
+
+    .bg-source {
+      .bg-img {
+        background-position: 50%;
+        opacity: 0.8;
+        background-image: url('https://res.cloudinary.com/vacation-rentals/image/upload/c_fill,h_400,w_1909/BA_header_image.jpg');
+      }
+      .bg-overlay {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      .bg-overlay-gloss {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: -43%;
+        background-color: #fff;
+        width: 100%;
+        -webkit-transform: skewX(-55deg);
+        transform: skewX(-55deg);
+        height: 100%;
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        opacity: 0.08;
+      }
+    }
+
+    .media-content {
+      .svg-text {
+        width: 400px;
+        svg {
+          rect {
+            stroke-dasharray: 100px 1000px;
+            stroke-dashoffset: -620px;
+            stroke: #007bbe;
+            stroke-width: 8px;
+            fill: transparent;
+            -webkit-transition: stroke-width 1s, stroke-dashoffset 1s,
+              stroke-dasharray 1s;
+            transition: stroke-width 1s, stroke-dashoffset 1s,
+              stroke-dasharray 1s;
+          }
+        }
+      }
+      .content-features {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 4px;
+        font-weight: 700;
+        line-height: 70px;
+        font-family: Nunito;
+        span {
+          letter-spacing: 0.6px;
+          display: inline-block;
+        }
+        p {
+          font-size: 22px;
+          line-height: 1.6;
+          letter-spacing: 0.3px;
+        }
+        h2.about-us {
+          font-size: 38px;
+        }
+      }
+    }
+
+    &:hover {
+      .media-content .svg-text svg rect {
+        stroke-width: 3px;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 940px;
+      }
+    }
+
+    .pos-absolute-0 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .step-boxes {
+    .step-box {
+      color: #23537a;
+
+      &:after {
+        content: '';
+        background: rgba(35, 83, 122, 0.45);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: -35px;
+        top: -35px;
+        border-radius: 50%;
+        box-shadow: -5px 5px 0 0 rgb(35 83 122 / 20%);
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 22px;
+        font-family: Nunito;
+      }
+
+      .img-container {
+        height: 100px;
+        img {
+          max-height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+
+      .middle-line {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: #d8d8d8;
+        margin: 25px 0 50px;
+        position: relative;
+        .blue-ball {
+          display: block;
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          top: -40px;
+          left: 50%;
+          margin-left: -40px;
+          &::before {
+            content: '';
+            background: #007bbe;
+            border-radius: 50%;
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 50%;
+            margin-left: -10px;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+          }
+        }
+      }
+
+      .text-content {
+        color: #a3a3a3;
+      }
+
+      &:hover {
+        .middle-line .blue-ball::before {
+          width: 30px;
+          height: 30px;
+          margin-left: -17px;
+          margin-top: -17px;
+        }
+      }
+    }
+  }
+
+  .features-section {
+    .title-div h4 {
+      font-size: 36px;
+    }
+    .features-content {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 400;
+        letter-spacing: 0.25px;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      .features-table {
+        overflow-x: auto;
+
+        table {
+          width: 100%;
+          min-width: 700px;
+          th,
+          td {
+            font-weight: bold;
+            text-align: center;
+          }
+
+          th {
+            font-size: 19px;
+            background: #00293d;
+            color: #fff;
+          }
+
+          td {
+            color: #565656;
+            vertical-align: middle;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .custom-bottom-border {
+        border-bottom: 2px solid #f28060;
+        width: 60px;
+        margin-bottom: 23px !important;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      div.notice-content {
+        background: #00293d !important;
+        color: white;
+      }
+    }
+  }
+  .seperator {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    opacity: 0.6;
+    background: -webkit-gradient(
+      50% 0,
+      ellipse,
+      rgba(0, 0, 0, 0.5),
+      transparent 70%
+    );
+    background: radial-gradient(
+      ellipse at 50% 0,
+      rgba(0, 0, 0, 0.3) 0,
+      transparent 70%
+    );
+    background: -webkit-radial-gradient(
+      50% 0,
+      70% 100%,
+      rgba(0, 0, 0, 0.25) 0,
+      transparent 70%
+    );
+  }
+  .callout-banner {
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 6%);
+    padding: 30px;
+    background: #fff;
+  }
+  .propertyItem {
+    @apply shadow-md bg-white border flex flex-col md:flex-row md:h-40 mb-3;
+    &__slide {
+      @apply w-full md:h-full md:w-auto;
+      aspect-ratio: 16/9;
+      @screen md {
+        aspect-ratio: 4/3;
+      }
+    }
+    &__content {
+      @apply flex-1 flex flex-col relative;
+    }
+    &__title {
+      @apply text-base font-bold hover:underline;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 3rem;
+      line-height: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .destination-child {
+    background-color: #fbfbfb;
+  }
+}

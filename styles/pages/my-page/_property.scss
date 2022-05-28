@@ -1,0 +1,88 @@
+.myPageProperty {
+  @media (min-width: 375px) {
+    &__stepper {
+      min-width: 300px;
+    }
+  }
+  @media (max-width: 900px) {
+    &__side {
+      display: none;
+    }
+  }
+  &__content {
+    min-width: 0;
+  }
+
+  .agenda {
+    @apply bg-white shadow-xl p-6;
+    &__nav {
+      @apply flex justify-center;
+    }
+    &__navButton {
+      @apply h-10 px-5 text-indigo-600 transition-colors duration-150 hover:bg-indigo-100;
+      &--left {
+        @apply rounded-l-lg;
+      }
+      &--right {
+        @apply rounded-r-lg;
+      }
+    }
+    &__navDate {
+      @apply justify-center flex;
+    }
+    &__navDateText {
+      @apply self-center mx-4 text-lg;
+    }
+    &__tableContainer {
+      @apply overflow-x-auto;
+    }
+    &__table {
+      @apply mt-4 w-full divide-y divide-gray-200 table-fixed;
+      th,
+      td {
+        @apply p-2;
+      }
+      td {
+        &.filled {
+          @apply bg-blue-400;
+        }
+        &.blocked {
+          @apply bg-gray-400;
+        }
+      }
+      thead {
+        tr {
+          th {
+            @apply w-16;
+            &:first-of-type {
+              @apply w-24;
+            }
+          }
+        }
+      }
+      tbody {
+        @apply bg-white divide-y divide-gray-200;
+        tr {
+          td {
+            @apply w-16 text-sm text-center whitespace-nowrap;
+            &:first-of-type {
+              @apply w-24;
+            }
+          }
+        }
+      }
+    }
+    &__slot {
+      @apply cursor-pointer bg-blue-600 text-white;
+    }
+    &__slotWrapper {
+      @apply flex justify-center items-center overflow-hidden whitespace-nowrap;
+    }
+    &__slotImage {
+      @apply mr-1;
+    }
+    &__slotTitle {
+      @apply overflow-hidden whitespace-nowrap overflow-ellipsis;
+    }
+  }
+}

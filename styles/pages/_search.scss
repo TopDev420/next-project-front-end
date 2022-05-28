@@ -1,0 +1,114 @@
+.searchPage {
+  .searchBar {
+    @apply flex flex-1 flex-col md:flex-row max-w-screen-lg p-4;
+
+    &__autoComplete {
+      @apply flex flex-row items-center border mb-4 md:mr-4;
+    }
+
+    &__dateRange {
+      @apply flex flex-row justify-between relative mb-4 md:mr-4;
+    }
+
+    &__guests {
+      @apply mb-4 md:mr-4;
+    }
+
+    &__moreFilters {
+      @apply text-center;
+    }
+
+    @screen md {
+      &__autoComplete,
+      &__guests {
+        flex-basis: 8rem;
+      }
+      &__dateRange {
+        flex-basis: 16rem;
+      }
+    }
+
+    @screen xl {
+      &__autoComplete,
+      &__guests {
+        flex-basis: 10rem;
+      }
+      &__dateRange {
+        flex-basis: 20rem;
+      }
+    }
+  }
+  .searchResult {
+    @apply p-4 bg-blue-50;
+    &--Md {
+      @apply flex flex-row;
+    }
+    &--Sm {
+      @apply flex flex-col;
+    }
+    &__tabs {
+      @apply flex flex-row justify-center mb-4;
+    }
+    &__tab {
+      @apply px-6 py-2 border text-blue-900 bg-white rounded-sm whitespace-nowrap flex flex-row justify-center items-center;
+      &--active {
+        @apply bg-gray-100;
+      }
+    }
+
+    .propertyList {
+      @apply flex flex-col md:mr-4;
+      height: 600px;
+      overflow-y: auto;
+      &__body {
+        @apply grid grid-cols-1 gap-y-4;
+      }
+      &__footer {
+        @apply my-4;
+      }
+    }
+
+    .propertyItem {
+      @apply shadow-md bg-white border flex flex-col md:flex-row md:h-40;
+      &__slide {
+        @apply w-full md:h-full md:w-auto;
+        aspect-ratio: 16/9;
+        @screen md {
+          aspect-ratio: 4/3;
+        }
+      }
+      &__content {
+        @apply flex-1 flex flex-col relative;
+      }
+      &__title {
+        @apply text-base font-bold hover:underline;
+        word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 3rem;
+        line-height: 1.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+.moreFiltersModal {
+  &__header {
+    @apply flex flex-row justify-between items-center border-b p-6;
+  }
+  &__title {
+    @apply text-lg;
+  }
+  &__section {
+    @apply p-6 border-b;
+  }
+  &__sectionTitle {
+    @apply text-center text-lg mb-4;
+  }
+  &__footer {
+    @apply flex flex-row justify-end items-center p-6;
+  }
+}
